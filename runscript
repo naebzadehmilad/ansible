@@ -1,0 +1,5 @@
+- hosts: vm
+  tasks:
+  - name: Run a script with arguments (using 'cmd' parameter)
+    script:
+      cmd: /tmp/script.sh
