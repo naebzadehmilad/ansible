@@ -1,0 +1,13 @@
+- hosts: vm
+  remote_user: root
+  become: true
+  become_method: sudo
+  tasks:
+  - name: add-repo
+    apt_repository:
+      repo: ppa:nginx/stable
+  - name: nginx
+    apt:
+      update_cache: yes
+      name: nginx
+~                   
