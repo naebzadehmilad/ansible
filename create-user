@@ -1,0 +1,9 @@
+- hosts: vm
+  tasks:
+  - name: create-user
+    user:
+      name: milad1
+      password: $6$V1fjplGE8HEb4$6dHEE/fodOKG0Kx.KLJpf8DWgby7bq2JbU7dYUpWLFf42VvucNHhGlgIaQQSSGNj00cqQzvlt8KQU2zqZVj87.
+      shell: "/bin/bash"
+      groups: "sudo"
+#mkpasswd --method=SHA-512
