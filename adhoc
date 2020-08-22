@@ -1,0 +1,1 @@
+ansible  -m shell -a "sudo cat /etc/issue.net > /etc/issue " all -u admin     --become --ask-become-pass
